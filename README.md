@@ -11,11 +11,17 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
 - drei große Herausforderungen:
   1. Grundprogramm
     - Grundkonzept für das Spiel
-    - Schritt für Schritt, d.h:
-      - ein Spielfeld erstellen, indem sich eine Schlange bewegt könnte (Größe, über Koordinaten etc.)
-      - Punkt im Spielfeld erstellen (später die Schalnge)
-      - über eine Tickerfunktion den Punkt bewegen lassen
-      - einen weiteren Punkt erstellen
+      a. ein Spielfeld erstellen, indem sich eine Schlange bewegt könnte (Größe, über Koordinaten etc.)
+      b. Punkt im Spielfeld erstellen (später die Schalnge)
+      c. über eine Tickerfunktion den Punkt bewegen lassen
+      d. einen weiteren Punkt erstellen der sich random im Spielfeld erstellt (später "Apfel") 
   2. GUI
-  3. Kommunikation zwischen Python und Arduino
-  
+  3. Steuerung
+    - 
+  4. Kommunikation zwischen Python und Arduino
+    - Grundkonzept für die serielle Kommunikation
+      a. Grundprogramm schreiben, welches Daten in Python ausgeben kann
+      b. über einen Server (W-Lan-Router, Handy-Hotspot) die Verbindung erstellen 
+   
+# Probleme:
+# Benutzung:
