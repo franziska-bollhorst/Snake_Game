@@ -25,7 +25,8 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
     - Textfelder ("Score", "Highscore", "Du hast verloren!") erstellen
     - Neustart-Button erstellen
     - Startfenster erstellen, bei dem der Name vor Beginn des Spiels abgefragt wird und dieses gestartet werden kann
-    - viele Designs wurde individuell geändert, z.B Farbe des Spielfeldes, der Schlange und des Apfels, Größe des Spielfeldes, Hintergrundfarbe des "Neustartbuttons", etc.
+    - viele Designs wurden individuell geändert, z.B Farbe des Spielfeldes, der Schlange und des Apfels, Größe des Spielfeldes, Hintergrundfarbe des "Neustartbuttons", etc.
+    - siehe Snake Image.png, Snake Startfenster.png, Snake verloren.png
   3. Kommunikation zwischen Python und Arduino
     - Grundkonzept für die serielle, drahtlose Kommunikation
       a. Ansätze und Idee aus dem Tutorium 06.
