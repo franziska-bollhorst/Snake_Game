@@ -40,4 +40,12 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
     - das Steuerkreuz haben wir mit einen Breadboard und vier Knöpfen erstellt 
     - die Könpfe wurde an bestimmte Pins geschaltet und diese Pins sind im Arduinocode für die jeweilige Richtung hinterlegt worden
 # Probleme:
+  1. triviale Tippfehler führen zu komplexen Problemen, die stundenlang behoben werden müssen
+  2. unzuverlässige Kommunikation zwischen dem Arduino und dem Pythonprogramm, sodass es zu Verzögerungen bei der Steuerung kommen
+  3. es sein kann, dass ein Befehl nicht gesendet wird, sodass man zweimal auf dem Knopf drücken muss
+  4. Arduino muss nach einiger Zeit neu gestartet werden, da dieser sich aufhängt
 # Benutzung:
+  - Hotspot starten
+  -  die Steuerung an den Arduino anschließen
+  - die 03_ServerExample.ino Datei auf den Arduino hochladen, ggf. die I.P.-Adresse und Password ändern (wird im seriellen Monitor angezeigt
+  - den Pythoncode hochladen, ggf. auch hier die I.P.-Adresse ändern
