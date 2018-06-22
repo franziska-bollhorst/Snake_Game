@@ -23,7 +23,9 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
     - Spielfeld erstellen mit Hilfe von Koordinaten erstellen 
     - Schalnge und Apfel im Koordinatensystem erscheinen lassen
     - Textfelder ("Score", "Highscore", "Du hast verloren!") erstellen
-    - Neustartbutton 
+    - Neustartbutton erstellen
+    - Startfenster erstellen, bei dem der Name abgefragt wird und das Spiel gestartet werden kann
+    - viele wurde individuell geändert, z.B Farbe des Spielfeldes, der Schlange und des Apfels, Größe des Spielfeldes, Hintergrundfarbe des "Neustartbuttons", etc.
   3. Kommunikation zwischen Python und Arduino
     - Grundkonzept für die serielle Kommunikation
       a. Ansätze und Idee aus dem Tutorium 06.WIFI für des erstellen des Codes
