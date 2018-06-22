@@ -1,0 +1,106 @@
+\hypertarget{namespace_snake}{}\section{Snake Namespace Reference}
+\label{namespace_snake}\index{Snake@{Snake}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_snake_1_1_game}{Game}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_snake_a91223592dfcc9c233f9d7c5b16809456}{createfield}} ()
+\item 
+def \mbox{\hyperlink{namespace_snake_a8f6d4da01109c97d36f9a18d5a0bb0b3}{firststart}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_snake_a10cc7da73d7488752c4a8222135707a1}\label{namespace_snake_a10cc7da73d7488752c4a8222135707a1}} 
+{\bfseries s} = socket.\+socket()
+\item 
+\mbox{\Hypertarget{namespace_snake_a26464c0ce15e8a65c02d8b1d0e077ea4}\label{namespace_snake_a26464c0ce15e8a65c02d8b1d0e077ea4}} 
+int {\bfseries size} = 25
+\item 
+\mbox{\Hypertarget{namespace_snake_a3aef21f736569d8b66197f0e7397c801}\label{namespace_snake_a3aef21f736569d8b66197f0e7397c801}} 
+bool {\bfseries feedcollision} = False
+\item 
+\mbox{\Hypertarget{namespace_snake_a3066d1fa56dad61e41bb50f0f85eb79a}\label{namespace_snake_a3066d1fa56dad61e41bb50f0f85eb79a}} 
+int {\bfseries length} = 1
+\item 
+\mbox{\Hypertarget{namespace_snake_a27bdeea7ec49893ec1aa7f5e0cc2967e}\label{namespace_snake_a27bdeea7ec49893ec1aa7f5e0cc2967e}} 
+{\bfseries direction} = randint(1,4)
+\item 
+\mbox{\Hypertarget{namespace_snake_a7fab8854941bcbd85234bec6d4879176}\label{namespace_snake_a7fab8854941bcbd85234bec6d4879176}} 
+int {\bfseries xx} = 8
+\item 
+\mbox{\Hypertarget{namespace_snake_a027467285b250e9abb387c2c1326771c}\label{namespace_snake_a027467285b250e9abb387c2c1326771c}} 
+int {\bfseries yy} = 8
+\item 
+\mbox{\Hypertarget{namespace_snake_ab110474976787cf3ccef734d19a75630}\label{namespace_snake_ab110474976787cf3ccef734d19a75630}} 
+list {\bfseries feedpoint} = \mbox{[}randint(1,16),randint(1,16)\mbox{]}
+\item 
+\mbox{\Hypertarget{namespace_snake_a5007979b981a90f08d3775ef8714c84c}\label{namespace_snake_a5007979b981a90f08d3775ef8714c84c}} 
+list {\bfseries xcoordinate} = \mbox{[}xx\mbox{]}
+\item 
+\mbox{\Hypertarget{namespace_snake_aab72c72a638d0b108981f93348891b18}\label{namespace_snake_aab72c72a638d0b108981f93348891b18}} 
+list {\bfseries ycoordinate} = \mbox{[}yy\mbox{]}
+\item 
+\mbox{\Hypertarget{namespace_snake_a0bc14678957b8b5a8dfac41d8e647041}\label{namespace_snake_a0bc14678957b8b5a8dfac41d8e647041}} 
+bool {\bfseries lost} = False
+\item 
+\mbox{\Hypertarget{namespace_snake_aa277acac43eb5cd735f12bf81f3e94bb}\label{namespace_snake_aa277acac43eb5cd735f12bf81f3e94bb}} 
+int {\bfseries score} = 0
+\item 
+\mbox{\Hypertarget{namespace_snake_ab2b5f6ed36de41b8f318733bc26b93ae}\label{namespace_snake_ab2b5f6ed36de41b8f318733bc26b93ae}} 
+int {\bfseries highscore} = 0
+\item 
+\mbox{\Hypertarget{namespace_snake_ac11d51dc9d52703ce138d3b42c094a18}\label{namespace_snake_ac11d51dc9d52703ce138d3b42c094a18}} 
+{\bfseries game} = \mbox{\hyperlink{class_snake_1_1_game}{Game}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Informatik Projekt 2018
+Thema:  Snake
+Erstellt von: Adrian Bergen(4228620), Lukas Hansen(4463302), Fanziska Bollhorst (4463145)
+
+Am Anfang werden die benötigten librarys importiert. Tkinter für die GUI,
+Socket für die Kommunikation, Random für zufällige Zahlen.
+
+Außerdem werden die für das Spiel benötigten Anfangsvariabeln erstellt.
+size: Größe der Quadrate, auf den das Spielfeld gezeichnet wird.
+feedcollision: Am Anfang kollidiert die Schlange nicht mit einem Punkt
+length: Länge der Schlange, vergrößert sich beim Aufsammeln eines Punktes
+direction: Zahlen von 1-4, sie stehen für die jeweilige Richtung.
+Dabei wird direction von Arduino gesteuert.
+xx und yy: Reine Anfangskoordinaten der Schlange auf dem Feld.
+(Das Feld ist 16x16)
+x/ycoordinate: xx und yy werden in jeweils einem Array gepackt.
+Später zeigt das Array die Punkte aller Schlangenpunkte.
+(Also länge des Arrays =Länge der Schlange)
+lost: Ist standartmäßig nicht True
+score/ Highscore: Ist am Anfang 0
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_snake_a91223592dfcc9c233f9d7c5b16809456}\label{namespace_snake_a91223592dfcc9c233f9d7c5b16809456}} 
+\index{Snake@{Snake}!createfield@{createfield}}
+\index{createfield@{createfield}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{createfield()}{createfield()}}
+{\footnotesize\ttfamily def Snake.\+createfield (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hier wird das erste mal das richtige Spielfeld erstellt. Es wird der Spielername übernommen
+und nach oben links gesetzt, Score und Highscore nach oben rechts. Das Startfenster wird gelöscht.
+Der Ticker wird zum ersten mal gestartet. Der Feedpoint wird gesetzt.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_snake_a8f6d4da01109c97d36f9a18d5a0bb0b3}\label{namespace_snake_a8f6d4da01109c97d36f9a18d5a0bb0b3}} 
+\index{Snake@{Snake}!firststart@{firststart}}
+\index{firststart@{firststart}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{firststart()}{firststart()}}
+{\footnotesize\ttfamily def Snake.\+firststart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wird das Spiel gestartet, erscheint ein Fenster mit Namenseingabe und einem Startknopf.
+Durch diesen Startknopf startet sich das Spiel.
+\end{DoxyVerb}
+ 

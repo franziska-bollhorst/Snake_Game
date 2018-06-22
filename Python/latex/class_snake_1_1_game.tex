@@ -1,0 +1,131 @@
+\hypertarget{class_snake_1_1_game}{}\section{Snake.\+Game Class Reference}
+\label{class_snake_1_1_game}\index{Snake.\+Game@{Snake.\+Game}}
+Inheritance diagram for Snake.\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snake_1_1_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_aedca2341f309daf9d1fdd1c1b5fbbb74}{createbutton}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_a7b60758212d640631d9fdb6d4f7af472}{ticker}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_aee9e8a04fb8c7d56f3b3230fa4d8a66b}{drawsnake}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_a98cef3415a4d544424cd9bc57e348ab7}{feedpoint}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_a47967ef289465a984d6c86b34ead527e}{createfeedpoint}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_a280b6182e187f4b13756abbc8776bfc0}{collisions}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_a30c722d4cdac2ba08f691a89a31e3306}{doastep}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_a5cdcfd6cdea9949bfe5005cb602c68d4}{restart}} (self)
+\item 
+def \mbox{\hyperlink{class_snake_1_1_game_aebc0cbe1082bdba9f171f075ad8f6693}{receivearduino}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snake_1_1_game_a280b6182e187f4b13756abbc8776bfc0}\label{class_snake_1_1_game_a280b6182e187f4b13756abbc8776bfc0}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!collisions@{collisions}}
+\index{collisions@{collisions}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{collisions()}{collisions()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+collisions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Diese Funktion checkt die Kollision mit den Spielfeldrändern und der Schlange selber. 
+Passiert dies, wird lost=True gesetzt und der Ticker läuft im nächsten
+Durchgang nicht weiter.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_aedca2341f309daf9d1fdd1c1b5fbbb74}\label{class_snake_1_1_game_aedca2341f309daf9d1fdd1c1b5fbbb74}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!createbutton@{createbutton}}
+\index{createbutton@{createbutton}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{createbutton()}{createbutton()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+createbutton (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hier wird ein Knopf erstellt, nachdem man bei dem Spiel verliert.
+Dieser Knopf dient dazu das Spiel neu zu starten (Aufrufen der Funktion "restart").
+Des Weiteren wird ein Textfeld erstellt. Dieses benachrichtigt dich, dass du verloren hast.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_a47967ef289465a984d6c86b34ead527e}\label{class_snake_1_1_game_a47967ef289465a984d6c86b34ead527e}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!createfeedpoint@{createfeedpoint}}
+\index{createfeedpoint@{createfeedpoint}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{createfeedpoint()}{createfeedpoint()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+createfeedpoint (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hier wird der feedpoint generiert. Es passiert zufällig auf dem Spielfeld. Es ist darauf
+zu achten, dass der Punkt nicht auf der Schlange generiert wird, andernfalls wird ein
+neuer Punkt generiert.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_a30c722d4cdac2ba08f691a89a31e3306}\label{class_snake_1_1_game_a30c722d4cdac2ba08f691a89a31e3306}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!doastep@{doastep}}
+\index{doastep@{doastep}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{doastep()}{doastep()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+doastep (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Bestimme die neuen Koordinaten von Snake, abhängig von der momentanten Richtung.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_aee9e8a04fb8c7d56f3b3230fa4d8a66b}\label{class_snake_1_1_game_aee9e8a04fb8c7d56f3b3230fa4d8a66b}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!drawsnake@{drawsnake}}
+\index{drawsnake@{drawsnake}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{drawsnake()}{drawsnake()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+drawsnake (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Zuerst wird geprüft, ob die Schlange mit einem Punkt (Futter) kollidiert.
+Anschließend wird das Array x/ycoordinate um die jeweilige NEUE x/y Koordinate erweitert.
+Bei collisions wird die Kollision mit der Schlange selber, sowie den Wänden geprüft.
+doastep verändert xx und yy, jenachdem welche "direction" die Schlange gerade hat.
+Als nächstes wird der neue Kopf der Schlange gezeichnet, anschließend wird
+hinten wieder die Spielfeldfarbe gezeichnet - Eine Schlange entsteht.
+Da die Länge der Schlange von Punktekollisionen gesteuert wird, muss sich das
+Array darauf anpassen, so wächst die Schlange tatsächlich auch.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_a98cef3415a4d544424cd9bc57e348ab7}\label{class_snake_1_1_game_a98cef3415a4d544424cd9bc57e348ab7}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!feedpoint@{feedpoint}}
+\index{feedpoint@{feedpoint}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{feedpoint()}{feedpoint()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+feedpoint (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Kollidiert der Schlangenkopf mit den x und y Koordinaten des feedpoints?
+Dann verändert sich der Score, die Schlange wächst um 1, ein neuer Punkt wird erstellt.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_aebc0cbe1082bdba9f171f075ad8f6693}\label{class_snake_1_1_game_aebc0cbe1082bdba9f171f075ad8f6693}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!receivearduino@{receivearduino}}
+\index{receivearduino@{receivearduino}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{receivearduino()}{receivearduino()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+receivearduino (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Empfange vom Arduino die Richtungsdaten (String). Man unterscheidet zwischen
+'u', 're', 'l', 'o' für die jeweiligen Richtungen. Es ist darauf zu achten,
+dass die Schlange keine 180° Wende machen kann.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_a5cdcfd6cdea9949bfe5005cb602c68d4}\label{class_snake_1_1_game_a5cdcfd6cdea9949bfe5005cb602c68d4}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!restart@{restart}}
+\index{restart@{restart}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+restart (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wenn man verliert, muss das Spiel neu aufgesetzt werden.
+Das Spielfeld wird neu gezeichnet, ein neuer Highscore wird bestimmt. 
+Es erscheint ein Text, dass man verloren hat und die Variabeln werden
+zurückgesetzt (z.B. die Koordinaten). Der Ticker wird neugestartet.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_snake_1_1_game_a7b60758212d640631d9fdb6d4f7af472}\label{class_snake_1_1_game_a7b60758212d640631d9fdb6d4f7af472}} 
+\index{Snake\+::\+Game@{Snake\+::\+Game}!ticker@{ticker}}
+\index{ticker@{ticker}!Snake\+::\+Game@{Snake\+::\+Game}}
+\subsubsection{\texorpdfstring{ticker()}{ticker()}}
+{\footnotesize\ttfamily def Snake.\+Game.\+ticker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Das Herz des Spiels. Ticker ruft sich alle 0,6 Sekunden rekursiv mithilfe einer after-Funktion wieder auf.
+Mit receivearduino wird die direction von Snake empfangen.
+Die Funktion ruft sich nicht wieder auf, wenn man verloren hat. Stattdessen hört das Spiel auf und der
+Neustartbutton wird erstellt.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Snake.\+py\end{DoxyCompactItemize}
