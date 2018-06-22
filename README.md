@@ -1,4 +1,3 @@
-Test
 # Snake_Game
 Snake mit Steuerung über Arduino und GUI/Programm über Python
 # Idee:
@@ -17,12 +16,15 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
       c. über eine Tickerfunktion den Punkt bewegen lassen
       d. einen weiteren Punkt erstellen der sich random im Spielfeld erstellt (später "Apfel") 
   2. GUI
-  3. Steuerung
-    - 
-  4. Kommunikation zwischen Python und Arduino
+  3. Kommunikation zwischen Python und Arduino
     - Grundkonzept für die serielle Kommunikation
-      a. Grundprogramm schreiben, welches Daten in Python ausgeben kann
-      b. über einen Server (W-Lan-Router, Handy-Hotspot) die Verbindung erstellen 
-   
+      a. Ansätze und Idee aus dem Tutorium 06.WIFI für des erstellen des Codes
+      b. auf Basis des Tutoriums haben wir das Grundprogramm für unsere Bedürfnisse angepasst
+      c. über einen Server (W-Lan-Router, Handy-Hotspot) die Verbindung erstellen 
+   4. Steuerung
+    - nachdem die ersten Befehele vom Arduino zum Python gesendet wurden, haben wir unterschiedliche Befehle gesendet
+    - Erstellen eines Steuerkreuzes mit den Befehelen oben, unten, rechts und links, damit sich die die Schlange in die jeweilige Richtung bewegen kann
+    - die Befehlen werden von dem Pythonprogramm entpfangen und mittels einer if-Funktion verarbeitet
+    - 
 # Probleme:
 # Benutzung:
