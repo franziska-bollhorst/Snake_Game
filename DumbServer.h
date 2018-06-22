@@ -1,3 +1,5 @@
+/**MUSS ZWINGEND IM SELBEN ORDNER SEIN, WIE DIE DATEI "03_ServerExample.ino"! */
+
 #pragma once
 
 #include <Arduino.h>
