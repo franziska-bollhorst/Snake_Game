@@ -39,6 +39,7 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
     - damit sich die Schlange, nachdem ein Knopf gedrückt wurde auch weiter in die Richtung bewegt, muss eine millis-Funktion erstellt werden. Diese sendet den einmal ausgeführten Befehl solange an Python, bis dieser durch einen neuen ersetzt wird.
     - das Steuerkreuz haben wir mit einen Breadboard und vier Knöpfen erstellt 
     - die Könpfe wurde an bestimmte Pins geschaltet und diese wurden im Arduinocode für die jeweilige Richtung hinterlegt
+    - siehe Kontroller.jpg und Verkabelung.jpg
 # Probleme:
    1. triviale Tippfehler führen zu komplexen Problemen, die zu stundenlangem Fehlersuchen führen
    2. unzuverlässige Kommunikation zwischen dem Arduino und dem Pythonprogramm, sodass es zu Verzögerungen bei der Steuerung kommt
