@@ -84,16 +84,16 @@ class Game(tk.Tk):
             
     
     def drawsnake(self):
-    """
-    Zuerst wird geprüft, ob die Schlange mit einem Punkt (Futter) kollidiert.
-    Anschließend wird das Array x/ycoordinate um die jeweilige NEUE x/y Koordinate erweitert.
-    Bei collisions wird die Kollision mit der Schlange selber, sowie den Wänden geprüft.
-    doastep verändert xx und yy, jenachdem welche "direction" die Schlange gerade hat.
-    Als nächstes wird der neue Kopf der Schlange gezeichnet, anschließend wird
-    hinten wieder die Spielfeldfarbe gezeichnet - Eine Schlange entsteht.
-    Da die Länge der Schlange von Punktekollisionen gesteuert wird, muss sich das
-    Array darauf anpassen, so wächst die Schlange tatsächlich auch.
-    """
+        """
+        Zuerst wird geprüft, ob die Schlange mit einem Punkt (Futter) kollidiert.
+        Anschließend wird das Array x/ycoordinate um die jeweilige NEUE x/y Koordinate erweitert.
+        Bei collisions wird die Kollision mit der Schlange selber, sowie den Wänden geprüft.
+        doastep verändert xx und yy, jenachdem welche "direction" die Schlange gerade hat.
+        Als nächstes wird der neue Kopf der Schlange gezeichnet, anschließend wird
+        hinten wieder die Spielfeldfarbe gezeichnet - Eine Schlange entsteht.
+        Da die Länge der Schlange von Punktekollisionen gesteuert wird, muss sich das
+        Array darauf anpassen, so wächst die Schlange tatsächlich auch.
+        """
         global xx
         global yy
         global xcoordinate
