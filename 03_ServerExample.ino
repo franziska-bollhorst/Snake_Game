@@ -4,7 +4,7 @@ Die Verbindung basiert auf dem Code "03_ServerExample.ino" aus Tutorium 6 unsere
 Dateien "DumbServer.cpp" und "DumbServer.h" müssen dazu zwingend im selben Ordner sein, wie der Hauptcode.
 */
 
-#include <SoftwareSerial.h> /** importiert die für die Serverommunikation benötigte Bibliothek mit unterschiedlichsten seriellen Schnittstellen */
+#include <SoftwareSerial.h> /** importiert die für die Serverkommunikation benötigte Bibliothek mit unterschiedlichsten seriellen Schnittstellen */
 #include "DumbServer.h" /** importiert die beiden in "Übung 6" verwendeten Serverdateien für die Servererstellung */ 
 
 
@@ -12,7 +12,7 @@ SoftwareSerial esp_serial(3, 2);  /** die Pins 2 und 3 werden für die Verbindun
 EspServer esp_server;
 
 
-String snake_direction = "u"; /** Ein String in dem die Richtung der Schlange gespeichert wird*/
+String snake_direction = "u"; /** Ein String, in dem die Richtung der Schlange gespeichert wird*/
 float temp = millis(); /** speichert die aktuelle Zeit*/
 
 
