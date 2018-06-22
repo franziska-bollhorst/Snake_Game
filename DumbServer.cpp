@@ -1,3 +1,5 @@
+/**MUSS ZWINGEND IM SELBEN ORDNER SEIN, WIE DIE DATEI "03_ServerExample.ino"! */
+
 /* This Library commands an ESP8266 with stock AT-firmware
  * to connect to an acces point.
  * It then starts listening on a TCP-port and will accept
