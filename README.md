@@ -11,17 +11,17 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
 - drei große Herausforderungen:
   1. Grundprogramm
     - Grundkonzept für das Spiel
-      a. ein Spielfeld erstellen, indem sich eine Schlange bewegen könnte (Größe, Darstellung über Koordinaten, Design etc.)
+      a. ein Spielfeld erstellen, in dem sich eine Schlange bewegen kann (Größe, Darstellung über Koordinaten, Design etc.)
       b. Punkte/Quadrate im Spielfeld erstellen (später die Schlange)
-      c. einen weiteren Punkt erstellen, der sich random im Spielfeld erstellt (später "Apfel")
+      c. einen weiteren Punkt erstellen, der sich zufällig auf dem Spielfeld erstellt (später "Apfel")
       d. Funktion erstellen, die die Kollision der Schlange mit sich selber und mit der Wand/dem Spielfeldrand abfragt, sodass man das Spiel verliert, wenn die Schlange kollidiert
       e. mittels eines Buttons ("Neustart") kann das Spiel danach beliebig oft ausgeführt werden
       f. eine Funktion einbauen, die die gesendeten Daten vom Arduino ausliest, damit sich darüber die Richtung der Schlange ändert und sich der Punkt in einem bestimmten Zeitintervall weiter bewegt
       g. Verlängerung der Schlange, wenn sie auf einen Apfel trifft
-      h. zusätzlich kann ein Score eingebaut werden, der sich immer um z.B. 10 Punkte erhöht, wenn die Schlange einen Apfel isst. Dieser kann nun ggf. auch ine einem Highscore gespeichert werden, wenn Score > Highscore
+      h. zusätzlich kann ein Score eingebaut werden, der sich immer um z.B. 10 Punkte erhöht, wenn die Schlange einen Apfel isst. Dieser kann nun ggf. auch in einem Highscore gespeichert werden, wenn Score > Highscore.
   2. GUI (Tkinter)
     - Spielfeld mit Hilfe von Koordinaten erstellen 
-    - Schalnge und Apfel im Koordinatensystem/ auf dem Spielfeld erscheinen lassen
+    - Schlange und Apfel im Koordinatensystem/ auf dem Spielfeld erscheinen lassen
     - Textfelder ("Score", "Highscore", "Du hast verloren!") erstellen
     - Neustart-Button erstellen
     - Startfenster erstellen, bei dem der Name vor Beginn des Spiels abgefragt wird und dieses gestartet werden kann
@@ -36,9 +36,9 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
     - nachdem die ersten Befehle vom Arduino an den PC gesendet wurden, haben wir unterschiedliche Befehle gesendet
     - Erstellen eines Steuerkreuzes mit den Befehelen "oben", "unten", "rechts" und "links", damit sich die die Schlange in die jeweilige Richtung bewegen kann
     - die Befehle werden von dem Pythonprogramm entpfangen und mittels einer if-Funktion verarbeitet
-    - damit sich die Schlange, nachdem ein Knopf gedrückt wurde auch weiter in die Richtung bewegt, muss eine millis-Funktion erstellt werden. Diese sendet den einmal ausgeführten Befehl solange an Python, bis dieser durch einen neuen ersetzt wird.
+    - damit sich die Schlange, nachdem ein Knopf gedrückt wurde auch weiter in die Richtung bewegt, muss eine Zeit-Funktion erstellt werden. Diese sendet den einmal ausgeführten Befehl solange an Python, bis dieser durch einen neuen ersetzt wird.
     - das Steuerkreuz haben wir mit einen Breadboard und vier Knöpfen erstellt 
-    - die Könpfe wurde an bestimmte Pins geschaltet und diese wurden im Arduinocode für die jeweilige Richtung hinterlegt
+    - die Knöpfe wurde an bestimmte Pins geschaltet und diese wurden im Arduinocode für die jeweilige Richtung hinterlegt
     - siehe Kontroller.jpg und Verkabelung.jpg
 # Probleme:
    1. triviale Tippfehler führen zu komplexen Problemen, die zu stundenlangem Fehlersuchen führen
