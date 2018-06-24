@@ -8,7 +8,7 @@ Snake mit Steuerung über Arduino und GUI/Programm über Python
 - die Kommunikation zwischen den beiden Programmen verläuft drahtlos, d.h. es wird ein Wifi-Shield für den Arduino benutzt, der über einen Hotspot mit dem Pythonprogramm kommuniziert
 
 # Herangehensweise:
-- drei große Herausforderungen:
+- Vier große Herausforderungen:
   1. Grundprogramm
     - Grundkonzept für das Spiel
       a. ein Spielfeld erstellen, in dem sich eine Schlange bewegen kann (Größe, Darstellung über Koordinaten, Design etc.)
